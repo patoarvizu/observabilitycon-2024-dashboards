@@ -122,13 +122,13 @@ data:
                 "uid": "grafanacloud-usage"
               },
               "editorMode": "code",
-              "expr": "sum(avg_over_time(grafanacloud_instance_metrics_limits[10m])) by (limit_name)",
+              "expr": "sum(grafanacloud_instance_metrics_limits) by (limit_name)",
               "legendFormat": "__auto",
               "range": true,
               "refId": "A"
             }
           ],
-          "title": "metrics limits - observabilityCON",
+          "title": "metrics limits",
           "type": "timeseries"
         }
       ],
